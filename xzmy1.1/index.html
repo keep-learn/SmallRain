@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Execise Bootstrap</title>
+	<!-- 引入css -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+
+<style>
+.bg{
+	  position: fixed;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	_position:absolute;
+}
+.bg2{
+	background:url('img/bg1.gif');
+	height: 1500px;
+}
+.left_width{
+	width:190px;
+}
+.scrollnav{ 
+
+	_position:absolute;
+	_top:expression(offsetParent.scrollTop+document.documentElement.clientHeight-this.offsetHeight-300);
+	/*解决IE6 中的固定定位效果的。你可以通过-300 来改变 菜单距离 顶部的*/
+}
+</style>
+<div class="container">
+<!-- 左边的导航区开始-->
+
+	<div  class="col-md-3 col-sm-3 hidden-xs bg" style="background:url('img/bg.jpg');">
+	<hr/>
+		<div  class="col-md-12">
+		<img class="img-responsive center-block left_width"  src="img/logo.jpg"/>
+		</div>
+	<hr/>
+<!-- 实用工具开始 -->
+		<div class="col-md-12  text-center" style="margin-top:20px;">
+			<div class="well col-md-8  col-md-offset-2  " style="background:#EEEDF2">
+			<h4>实用工具</h4>
+		
+			<div class=" text-center ">
+				<h5>天气预报</h5>
+				<h6>咸阳 : 晴 </h6>
+	
+			</div>
+			</div>
+		</div>
+<!-- 使用工具结束 -->
+
+<!-- 导航栏目开始 -->
+		<div class="col-md-12 scrollnav"   id="scrollnav">
+			<div class=" col-md-8  col-md-offset-2  well text-center" style="background:#BAF372;">
+				<a href="" date-scroll="#one">	one </a>
+			</div>
+			<div class="col-md-8  col-md-offset-2  well text-center" style="background:#EED147;">
+				<a href="" date-scroll="#two">	two </a>
+			</div>
+			<div class="col-md-8  col-md-offset-2  well text-center" style="background:#ED46EE;">
+				<a href="" date-scroll="#three">three </a>
+			</div>
+			<div class="col-md-8  col-md-offset-2  well text-center" style="background:#EF9646;">
+				<a href="" date-scroll="#four">	four </a>
+			</div>
+
+		</div>
+<!-- 导航栏目结束 -->
+	</div>
+<!-- 左边的导航区结束-->
+<!-- 右边的内容开始 -->
+<div  class="col-md-9 col-sm-9 col-xs-12 col-sm-offset-3 col-md-offset-3 bg2">
+<!-- 登录注册开始 -->
+	<div class="row text-center" style="margin-top:20px;">
+			<div class="col-md-3 text-center">
+			 <h2 style="font-family:'楷体';color:green ">中华军事网</h2>
+			</div>
+			<div class="col-md-2 pull-right text-center" >
+				 <button class="btn btn-success">登录</button>
+				 <button class="btn btn-success">注册</button>
+			</div>
+	</div>
+	<hr style="border:2px solid green"/>
+<!-- 登录注册结束 -->
+
+<!-- 具体内容的实现 开始-->
+<div class="col-md-12"  >
+<!-- 第一个导航条 -->
+	<div id="one" class="col-md-12" style="border:0px solid green;background:rgba(186,243,114,0.5)">
+	 	<div class="col-md-12" >
+	 		 <h2>火箭</h2>
+	 	</div>
+	 	<!-- 每个条目的第一行 -->
+	 	<div class="row text-center">
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+
+	 	</div>
+	 	<!-- 每个条目的第二行 -->
+	 	<div class="row text-center">
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+
+	 	</div>
+	 	<!-- 每个条目的第三行 -->
+	 	<div class="row text-center">
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+
+	 	</div>
+	 	<!-- 每个条目的第四行 -->
+	 	<div class="row text-center">
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+
+	 	</div>
+	 	<br/>
+
+	 </div>
+	 	<hr style="border:2px solid #332A25"/>
+<!-- 第2个导航条 -->
+	<div id="two" class="col-md-12" style="border:0px solid green;background:rgba(186,243,114,0.5)">
+	 	<div class="col-md-12" >
+	 		 <h2>火箭</h2>
+	 	</div>
+	 	<!-- 每个条目的第一行 -->
+	 	<div class="row text-center">
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+
+	 	</div>
+	 	<!-- 每个条目的第二行 -->
+	 	<div class="row text-center">
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+
+	 	</div>
+	 	<!-- 每个条目的第三行 -->
+	 	<div class="row text-center">
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+
+	 	</div>
+	 	<!-- 每个条目的第四行 -->
+	 	<div class="row text-center">
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+
+	 	</div>
+	 	<br/>
+
+	 </div>
+	 	<hr style="border:2px solid #332A25"/>
+
+<!-- 第3个导航条 -->
+	<div id="three" class="col-md-12" style="border:0px solid green;background:rgba(186,243,114,0.5)">
+	 	<div class="col-md-12" >
+	 		 <h2>火箭</h2>
+	 	</div>
+	 	<!-- 每个条目的第一行 -->
+	 	<div class="row text-center">
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+
+	 	</div>
+	 	<!-- 每个条目的第二行 -->
+	 	<div class="row text-center">
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+
+	 	</div>
+	 	<!-- 每个条目的第三行 -->
+	 	<div class="row text-center">
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+
+	 	</div>
+	 	<!-- 每个条目的第四行 -->
+	 	<div class="row text-center">
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+
+	 	</div>
+	 	<br/>
+
+	 </div>
+	 	<hr style="border:2px solid #332A25"/>
+
+<!-- 第4个导航条 -->
+	<div id="four" class="col-md-12" style="border:0px solid green;background:rgba(186,243,114,0.5)">
+	 	<div class="col-md-12" >
+	 		 <h2>火箭</h2>
+	 	</div>
+	 	<!-- 每个条目的第一行 -->
+	 	<div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+
+	 	</div>
+	 	<!-- 每个条目的第二行 -->
+	 	<div class="row text-center">
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+
+	 	</div>
+	 	<!-- 每个条目的第三行 -->
+	 	<div class="row text-center">
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+
+	 	</div>
+	 	<!-- 每个条目的第四行 -->
+	 	<div class="row text-center">
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+		 	<div class=" col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		 		 The first one 
+		 	</div>
+
+	 	</div>
+	 	<br/>
+
+	 </div>
+	 	<hr style="border:2px solid #332A25"/>
+
+
+</div>
+<!-- 具体内容的实现 结束-->
+
+</div>
+<!-- 右边的内容结束 -->
+
+</div>
+
+</body>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="js/jquery-1.11.1.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="js/bootstrap.min.js"></script>
+<!-- 屏幕滚动代码 开始 -->
+<script>
+$(document).ready(function(){
+	jQuery.scrollto = function(scrolldom,scrolltime) {
+		
+		$(scrolldom).click( function(){ 
+			var scrolltodom = $(this).attr("date-scroll");
+			$(this).addClass("thisscroll").siblings().removeClass("thisscroll");
+			$('html,body').animate({
+				scrollTop:$(scrolltodom).offset().top},scrolltime
+			);
+			return false;
+		}); 
+		
+	};
+  
+    $.scrollto("#scrollnav a",600);
+});
+</script>
+
+
+</html>

@@ -88,3 +88,23 @@
 .img_opacity .row{
 	margin-left:8px;
 }
+/*二级页面的css*/
+.passage_contents{
+	text-indent: 2em;
+	/*color:white;*/
+	font-size: 19px;
+	line-height: 30px;
+}
+
+
+.z-top{
+  margin-top:15px;
+}
+.z-name{
+  color: green;
+  margin-top: 10px;
+}
+.z-time{
+
+color:#999;
+}

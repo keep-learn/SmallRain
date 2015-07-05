@@ -5,46 +5,24 @@
 	<title>Execise Bootstrap</title>
 	<!-- 引入css -->
 	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
 </head>
 <body>
 
-<style>
-.bg{
-	  position: fixed;
-	  top: 0;
-	  bottom: 0;
-	  left: 0;
-	_position:absolute;
-}
-.bg2{
-	background:url('img/bg1.gif');
-	height: 1500px;
-}
-.left_width{
-	width:190px;
-}
-.scrollnav{ 
-
-	_position:absolute;
-	_top:expression(offsetParent.scrollTop+document.documentElement.clientHeight-this.offsetHeight-300);
-	/*解决IE6 中的固定定位效果的。你可以通过-300 来改变 菜单距离 顶部的*/
-}
-.nav_font{
-	font-size: 
-}
-</style>
+<!-- 页面总容器的开始 -->
 <div class="container">
 <!-- 左边的导航区开始-->
 
 	<div  class="col-md-3 col-sm-3 hidden-xs bg" style="background:url('img/bg.jpg');">
 	<hr/>
 		<div  class="col-md-12">
-		<img class="img-responsive center-block left_width"  src="img/logo.jpg"/>
+		<img class="img-responsive center-block left_width" style="opacity:1.0;filter:Alpha(opacity=100);"  src="img/logo.jpg"/>
 		</div>
 	<hr/>
 <!-- 实用工具开始 -->
 		<div class="col-md-12  text-center" style="margin-top:20px;">
-			<div class="well col-md-8  col-md-offset-2  " style="background:#EEEDF2">
+			<div class=" tool  col-md-8  col-md-offset-2  "  >
 			<h4>实用工具</h4>
 		
 			<div class=" text-center ">
@@ -58,18 +36,26 @@
 
 <!-- 导航栏目开始 -->
 		<div class="col-md-12 scrollnav nav_font"   id="scrollnav">
-			<div class=" col-md-8  col-md-offset-2  well text-center" style="background:#BAF372;">
-				<a href="" date-scroll="#one">	军事 </a>
-			</div>
-			<div class="col-md-8  col-md-offset-2  well text-center" style="background:#EED147;">
-				<a href="" date-scroll="#two">	轮船 </a>
-			</div>
-			<div class="col-md-8  col-md-offset-2  well text-center" style="background:#ED46EE;">
-				<a href="" date-scroll="#three"> 火箭 </a>
-			</div>
-			<div class="col-md-8  col-md-offset-2  well text-center" style="background:#EF9646;">
-				<a href="" date-scroll="#four">	大炮 </a>
-			</div>
+		<a  class="col-md-offset-2 col-md-8 " href="" date-scroll="#one">
+			
+					军事
+			
+		 </a>
+		 <a class="col-md-offset-2 col-md-8 " href="" date-scroll="#two">
+			 
+					轮船 
+			 
+		</a>
+			<a  class="col-md-offset-2 col-md-8  "  href="" date-scroll="#three">
+			 
+				 火箭
+			 
+			 </a>
+			 <a  class="col-md-offset-2  col-md-8  "  href="" date-scroll="#four">
+			 
+					大炮 
+			 
+			</a>
 
 		</div>
 <!-- 导航栏目结束 -->
@@ -416,15 +402,104 @@
 	 	<hr style="border:2px solid gray"/>
 
 
+
+<!-- 底部页脚的开始 -->
+<div class="row foot_font_size" style="height:352px;background:#2d3237">
+	<div class="col-md-6 col-sm-6 col-xs-6 hidden-sm hidden-xs" >
+	<!-- 第一排图片开始 -->
+		<div class="col-md-12 ">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				 <h3>小雨滴 团队成员</h3>
+				 <br/>
+			</div>
+		<br/>
+			<div class="img-responsive col-md-4 col-sm-4 col-xs-4">
+				<img src="img/person1.jpg" class="img-responsive"/>
+			</div>
+			<div class="img-responsive col-md-4 col-sm-4 col-xs-4">
+				<img src="img/person2.jpg" class="img-responsive"/>
+			</div>
+			<div class="img-responsive col-md-4 col-sm-4 col-xs-4">
+				<img src="img/person3.jpg" class="img-responsive"/>
+			</div>
+
+		</div>
+	<!-- 第一排图片结束 -->
+	<!-- 第二排图片 开始-->
+		<div class="col-md-12 ">
+
+		<br/>
+			<div class="img-responsive col-md-4 col-sm-4 col-xs-4">
+				<img src="img/person4.jpg" class="img-responsive"/>
+			</div>
+			<div class="img-responsive col-md-4 col-sm-4 col-xs-4">
+				<img src="img/person5.jpg" class="img-responsive"/>
+			</div>
+			<div class="img-responsive col-md-4 col-sm-4 col-xs-4">
+				<img src="img/person6.jpg" class="img-responsive"/>
+			</div>
+
+		</div>
+		<!-- 第二排图片结束 -->
+	</div>
+	<!-- 页脚右边内容的开始 -->
+	<div class="col-md-6 col-sm-12 col-xs-12" >
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				 <h3>联系方式</h3>
+				 <br/>
+				 <hr/>
+			</div>
+	<br/>
+		 <div class="col-md-12 col-sm-12 col-xs-12">
+		 	 <span>
+		 	     邮箱 : lovephp@foxmail.com 
+	<hr style="border:1px solid gray" />
+		 	 </span>
+		 </div>
+	
+		 <div class="col-md-12 col-sm-12 col-xs-12">
+		 	 <span>
+		 	    联系方式 : 15769207754  
+	<hr style="border:1px solid gray" />
+		 	 </span>
+		 </div>
+	 
+		 <div class="col-md-12 col-sm-12 col-xs-12">
+		 	 <span>
+		 	    友情链接: www.lovezbs.com 
+		 	 </span>
+		 </div>
+
+
+	</div>
+	<hr style="border:1px solid #2d3237" />
+	<div class="col-md-12 col-sm-12 col-xs-12 text-center">
+	 	 <span>
+	 	 	<br/>
+	 	    版权所有 ©  2015--2020, 侵权必究 
+	 	 </span>
+	 </div>
+	<!-- 页脚右边内容的结束 -->
+
+<!-- <div id="one" class="row" style="height:300px;border:0px solid green;background:pink">
+	
+</div> -->
+
+
+</div>
+<!-- 底部页脚的结束 -->
+
+
+
+
 </div>
 <!-- 具体内容的实现 结束-->
 
 </div>
 <!-- 右边的内容结束 -->
-
-
-
 </div>
+<!-- 总页面的结束 -->
+
 
 </body>
 

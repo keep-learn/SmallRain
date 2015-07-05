@@ -5,5 +5,11 @@
 开始时间 : 2015/7/5
 Hope I can be better and better  
 ```
+
 ![](./xzmy1.1/img/index.jpg)
+
+### 注意: 代码仅供学习参考,不得非法使用
+### 联系方式 : QQ : 429377083
+### [个人网站](http://www.lovezbs.com) 
+
 
